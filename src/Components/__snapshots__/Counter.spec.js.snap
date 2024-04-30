@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter component test snapshot 1`] = `
+<div>
+  <div>
+    <h2>
+      Counter
+    </h2>
+    <p>
+      Number: 
+      0
+    </p>
+    <button>
+      Increment
+    </button>
+    <button>
+      Decrement
+    </button>
+  </div>
+</div>
+`;
