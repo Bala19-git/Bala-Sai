@@ -1,0 +1,143 @@
+.app {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-button {
+  background-color: #ffffff; 
+  border: none;
+  color: black; 
+  padding: 10px;
+  cursor: pointer;
+  font-size: 40px; 
+  border-radius: 50%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-button:hover {
+  background-color: #83878e;
+}
+
+.carousel-button-left {
+  left: 10px;
+}
+
+.carousel-button-right {
+  right: 10px;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 2.5s ease-in-out;
+  width: 100%;
+}
+
+.carousel-image-container {
+  flex: 0 0 16.66%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.carousel-image {
+  width: 200px; 
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #eef1f5;
+}
+
+.legend {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.best-food-heading {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%; 
+  font-size: 40px;
+}
+
+.Food-heading {
+  font-size: 40px;
+  margin-left: 130px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .carousel-image-container {
+    flex: 0 0 33.33%;
+  }
+  
+  .carousel-image {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .carousel-button {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .best-food-heading, .Food-heading {
+    font-size: 30px;
+  }
+
+  .legend {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-image-container {
+    flex: 0 0 50%;
+  }
+
+  .carousel-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .carousel-button {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .best-food-heading, .Food-heading {
+    font-size: 20px;
+    margin-left: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .legend {
+    font-size: 0.8em;
+  }
+}

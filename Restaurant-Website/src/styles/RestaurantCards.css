@@ -1,0 +1,51 @@
+.app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    font-family: Okra, Helvetica, sans-serif;
+  }
+  
+  .restaurant-card {
+    font-family: Okra, Helvetica, sans-serif;
+    margin-left: 70px;
+    width: 440px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .restaurant-card:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .restaurant-card h2 {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .arrow {
+    font-size: 1.5rem;
+  }
+  
+  .body{
+    font-family: Okra, Helvetica, sans-serif;
+}
+  
+@media only screen and (max-width: 600px) {
+  .restaurant-card {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .restaurant-set {
+    justify-content: center;
+  }
+}
